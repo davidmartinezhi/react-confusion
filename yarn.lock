@@ -4587,8 +4587,10 @@ __metadata:
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
+    eslint-config-react-app: ^6.0.0
     react: ^17.0.2
     react-dom: ^17.0.2
+    react-script: ^2.0.5
     react-scripts: 4.0.3
     web-vitals: ^1.0.1
   languageName: unknown
@@ -12056,6 +12058,13 @@ fsevents@^1.2.7:
   version: 0.8.3
   resolution: "react-refresh@npm:0.8.3"
   checksum: 38f06df8e0a20701b96e5d680838a3528d66cfb53db79843d30cb9517df3262ec596607147439975267bf0634bee77101db37298ea79b5742cc28664632f3c76
+  languageName: node
+  linkType: hard
+
+"react-script@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "react-script@npm:2.0.5"
+  checksum: 90eca97f072764bcf252bbfac72b13c9f3bde4a92e52c4cd2bad2cb788dfdee7bc759850b84d47352c8cf919906e368018f1a57014472cf601dfcdf5637c3a71
   languageName: node
   linkType: hard
 
