@@ -16,13 +16,15 @@ class Menu extends Component {
     renderDish(dish) {
       if(dish != null){
         return(
-          <Card>
-            <CardImg width="100%" object src={dish.image} alt={dish.name} />
-            <CardBody>
-              <CardTitle>{dish.name}</CardTitle>
-              <CardText>{dish.description}</CardText>
-            </CardBody>
-          </Card>
+          <div className="col-12 col-md-5 m-1">
+            <Card>
+              <CardImg width="100%" object src={dish.image} alt={dish.name} />
+              <CardBody>
+                <CardTitle>{dish.name}</CardTitle>
+                <CardText>{dish.description}</CardText>
+              </CardBody>
+            </Card>
+          </div>
         );
       }
       else {
