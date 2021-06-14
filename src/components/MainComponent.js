@@ -9,10 +9,13 @@ class Main extends Component {
   constructor(props){
     super(props);
     this.state = {
-      dishes: DISHES
+      dishes: DISHES,
+      selectedDish: null
     };
   }
-
+  onDishSelect(dish) {
+    this.setState({ selectedDish: dish });
+  }
   render(){
     return (
       <div>
