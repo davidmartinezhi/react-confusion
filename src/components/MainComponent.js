@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Menu from './components/MenuComponent.js';
 import {DISHES} from './shared/dishes';
+import DishDetail from './DishDetailComponent';
 
 class App extends Component {
 
