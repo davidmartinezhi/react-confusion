@@ -22,6 +22,7 @@ class Main extends Component {
           </div>
         </Navbar>
         <Menu dishes={this.state.dishes}/>
+        <DishDetail dish={}/>
       </div>
     );
   }
