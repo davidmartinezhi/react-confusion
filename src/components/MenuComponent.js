@@ -9,9 +9,7 @@ class Menu extends Component {
 
   }
 
-  onDishSelect(dish) {
-    this.setState({ selectedDish: dish });
-  }
+
 
   render() {
     const menu = this.props.dishes.map((dish) => {
