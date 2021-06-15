@@ -1,14 +1,7 @@
 import React from "react";
 import { Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "reactstrap";
 
-class DishDetail extends Component {
-  constructor(props){
-    super(props);
 
-    this.state = {
-      selectedDishDetail: this.props.dishdetail
-    };
-  }
 
   renderDish(dish) {
     if(dish != null){
