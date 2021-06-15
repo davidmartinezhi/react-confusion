@@ -3,7 +3,7 @@ import { Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "re
 
 
 
-  renderDish(dish) {
+  function RenderDish({dish}) {
     if(dish != null){
       return (
         <div className='col-12 col-md-5 m-1'>
@@ -23,7 +23,7 @@ import { Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "re
     }
   }
 
-  renderComments(comments){
+  function RenderComments({comments}){
         if (comments == null) {
             return (
               <div></div>
@@ -54,7 +54,6 @@ import { Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "re
         )
     }
 
-    render(){
         const dish = this.props.dish;
 
         if (dish == null) {
@@ -71,7 +70,7 @@ import { Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "re
             </div>
             </div>
         )
-    }
-}
+
+
 
 export default DishDetail;
