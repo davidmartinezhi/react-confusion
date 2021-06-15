@@ -2,8 +2,18 @@ import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
 
 
-class Menu extends Component {
 
+  function renderMenuItem({dish, onClick }){
+    return(
+      <Card key={dish.id} onClick={() => this.props.onClick(dish.id)}>
+        <CardImg width="100%" src={dish.image} alt={dish.name} />
+        <CardImgOverlay>
+          <CardTitle>{dish.name}</CardTitle>
+        </CardImgOverlay>
+      </Card>
+    );
+
+  }
 
     const menu = this.props.dishes.map((dish) => {
             return (
