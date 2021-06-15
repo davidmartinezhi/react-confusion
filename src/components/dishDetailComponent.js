@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "reactstrap";
 
 class DishDetail extends Component {
