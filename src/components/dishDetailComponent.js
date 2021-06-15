@@ -42,8 +42,9 @@ import { Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "re
                     }).format(new Date(comment.date))}
                     </p>
                 </li>
-            )
-        })
+            );
+        });
+
         return (
             <div className='col-12 col-md-5 m-1'>
                 <h4> Comments </h4>
@@ -51,25 +52,28 @@ import { Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "re
                     {commentsRen}
                 </ul>
             </div>
-        )
+        );
     }
 
-        const dish = this.props.dish;
+    const DishDetail = (props) => {
+      const dish = props.dish;
 
-        if (dish == null) {
-            return (
-              <div></div>
-            );
-        }
+      if (props.dish == null) {
+          return (
+            <div></div>
+          );
+      }
 
-        return (
-          <div className="container">
-            <div className='row'>
-                {this.renderDish(dish)}
-                {this.renderComments(dish.comments)}                
-            </div>
-            </div>
-        )
+      return (
+        <div className="container">
+          <div className='row'>
+            <RenderDish dish={props.dish}/>
+            <RenderComments comments={props.dish.comments} />                 
+          </div>
+        </div>
+      );
+    }
+
 
 
 
