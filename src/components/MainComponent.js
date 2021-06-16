@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Menu from './MenuComponent';
 import DishDetail from './DishDetailComponent';
+import Header from './HeaderComponent';
 import { DISHES } from '../shared/dishes';
 
 class Main extends Component {
