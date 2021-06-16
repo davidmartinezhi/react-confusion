@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import { Navbar, NavbarBrand, Jumbotron } from 'reactstrap';
 
 class Header extends Component{
     render(){
         return(
             <>
-            <Navbar dark color="primary">
+            <Navbar dark>
                 <div className="container">
                     <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
                 </div>
