@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Navbar, NavbarBrand, Jumbotron } from 'reactstrap';
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 
 class Header extends Component{
     render(){
