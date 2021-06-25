@@ -9,9 +9,16 @@ class Header extends Component{
                 <Navbar dark expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/">
-                            <image src="assets/images/ogo.png" height="30" width="41"
+                            <image src="assets/images/logo.png" height="30" width="41"
                             alt="Ristorante con Fusion"/>
                         </NavbarBrand>
+                        <Nav navbar>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/home">
+                                    <span className="fa fa-home fa-lg"></span> Home
+                                </NavLink>
+                            </NavItem>
+                        </Nav>
                     </div>
                 </Navbar>
                 <Jumbotron>
