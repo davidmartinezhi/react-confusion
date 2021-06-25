@@ -21,6 +21,10 @@ class Main extends Component {
     return (
         <div>
             <Header />
+            <Switch>
+              <Route path="/home" component={HomePage}/>
+              <Route exact path="/menu" component={ () => <Menu dishes={this.state.dishes}/>} />
+            </Switch>
             <Footer />
       </div>
     );
