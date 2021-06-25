@@ -3,6 +3,19 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron }
 import {NavLink} from 'react-router-dom';
 
 class Header extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            isNavOpen: false
+        };
+        this.toggleNav = this.toggleNav.bind(this);
+    }
+
+    toggleNav() {
+        this.setState({
+            isNavOpen: !this.state.isNavOpen
+        });
+    }
     render(){
         return(
             <>
@@ -14,7 +27,7 @@ class Header extends Component{
                             alt="Ristorante con Fusion"/>
                         </NavbarBrand>
 
-                        <Collapse isOpen={this.state.isOpen} navbar>
+                        <Collapse isNavOpen={this.state.isOpen} navbar>
                             <Nav navbar>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">
