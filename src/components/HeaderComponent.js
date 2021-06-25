@@ -6,9 +6,12 @@ class Header extends Component{
     render(){
         return(
             <>
-                <Navbar dark>
+                <Navbar dark expand="md">
                     <div className="container">
-                        <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/">
+                            <image src="assets/images/ogo.png" height="30" width="41"
+                            alt="Ristorante con Fusion"/>
+                        </NavbarBrand>
                     </div>
                 </Navbar>
                 <Jumbotron>
