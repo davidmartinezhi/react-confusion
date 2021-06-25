@@ -21,7 +21,6 @@ class Main extends Component {
     return (
         <div>
             <Header />
-            <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
             <Footer />
       </div>
     );
